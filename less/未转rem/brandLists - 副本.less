@@ -1,0 +1,197 @@
+  /*引入初始化样式*/
+
+  @import 'base.less';
+  /*引入公用头部样式*/
+
+  @import 'header.less';
+  body {
+      background: #ebebeb;
+  }
+  /*商品路径*/
+
+  .pd-nav {
+      height: 2rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      line-height: 2rem;
+      padding-left: 0.75rem;
+      font-size: 0.7rem;
+      background: linear-gradient(#fff, #ebebeb);
+  }
+  /*分类品牌排行前十*/
+
+  #brand-top {
+      >.head {
+          background: #f3f3f3;
+          border: 1px solid #c8c8c8;
+          >h3 {
+              height: 40px;
+              line-height: 38px;
+              padding-left: 10px;
+              color: #874604;
+          }
+      }
+      >.brand-list {
+          >li {
+              padding: 10px;
+              position: relative;
+              >a {
+                  >span {
+                      color: #fff;
+                      display: inline-block;
+                      width: 20px;
+                      height: 20px;
+                      text-align: center;
+                      line-height: 20px;
+                      background-color: #f10e0e;
+                      vertical-align: top;
+                  }
+                  >.content {
+                      display: inline-block;
+                      >p {
+                          &:first-of-type {
+                              color: #000;
+                          }
+                          &:last-of-type {
+                              font-size: 12px;
+                              color: #999;
+                          }
+                      }
+                  }
+                  >.icon-arrow {
+                      font-size: 20px;
+                      position: absolute;
+                      top: 50%;
+                      transform: translateY(-50%);
+                      right: 10px;
+                  }
+              }
+          }
+      }
+  }
+  /*产品销量排行*/
+
+  #sales-top {
+      >.head {
+          background: #f3f3f3;
+          border: 1px solid #c8c8c8;
+          >h3 {
+              height: 40px;
+              line-height: 38px;
+              padding-left: 10px;
+              color: #874604;
+          }
+      }
+      /*主体内容 产品列表*/
+      >.main-body {
+          >ul {
+              >li {
+                  padding: 0.5rem 0.4rem;
+                  border-bottom: 1px solid #ccc;
+                  >a {
+                      display: block;
+                      >.img {
+                          float: left;
+                          img {
+                              width: 6rem;
+                              height: 6rem;
+                          }
+                      }
+                      >.info {
+                          padding-left: 6.5rem;
+                          width: 100%;
+                          .title {
+                              color: #333333;
+                              font-size: 0.75rem;
+                          }
+                          .price {
+                              color: #ed0000;
+                              font-size: 0.9rem;
+                              margin-top: 2rem;
+                          }
+                          .other {
+                              color: #a1a1a1;
+                              margin-top: 0.25rem;
+                              .comment {
+                                  float: right;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  /*最有用的用户评论*/
+
+  #user-comment {
+      >.head {
+          background: #f3f3f3;
+          border: 1px solid #c8c8c8;
+          >h3 {
+              height: 40px;
+              line-height: 38px;
+              padding-left: 10px;
+              color: #874604;
+          }
+      }
+      >.comment-item {
+          >a {
+              display: block; 
+              //产品基本信息
+              >.product-info {
+                  padding-left: 10px;
+                  padding-bottom: 10px;
+                  >.pic {
+                      display: inline-block;
+                      float: left;
+                      margin-top: 10px;
+                      >img {
+                          width: 80px;
+                          height: 80px;
+                      }
+                  }
+                  >.hd {
+                      margin-left: 10px;
+                      margin-top: 10px;
+                      float: left;
+                  }
+              } 
+              //评论
+              >.coomment {
+                  &::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    left: 29px;
+                    top: -8px;
+                    border-bottom: 8px solid #f8f8f8;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                  }
+                  padding: 10px;
+                  background: #f8f8f8;
+                  border: 1px solid #e7e7e7;
+                  position: relative;
+                  //基本信息
+                  >.comment-base {
+                    >.stars {
+                        display: inline-block;
+                    }
+
+                    >.times {
+                        float: right;
+                    }
+                  }
+                  //评论内容
+                  >.content {
+                    margin-top: 5px;
+                  }
+              }
+          }
+      }
+  }
+  /*引入公用底部样式*/
+
+  @import 'footer.less';

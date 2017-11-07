@@ -1,0 +1,57 @@
+/*引入初始化样式*/
+@import 'base.less';
+/*引入公用头部样式*/
+@import 'header.less';
+
+/*主体*/
+#main {
+    padding: 10px;
+    background-color: #ebebeb;
+    /*导航外层*/
+    >.item-wrap {
+        border: 2px solid #ccc; 
+        border-radius: 5px;
+        /*每一个一级导航*/ 
+        >.item {
+            border-bottom: 2px solid #ccc;                        
+            /*一级导航标题*/
+            >.item-title {
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 15px;
+                font-size: 16px;
+                font-weight: bold;
+                background: url('../images/arrow1.gif') no-repeat right center;                
+            }
+            /*二级导航部分*/
+            >.item-body {
+                display: none;
+                >ul {
+                    background-color: #fff;
+                    >li {
+                        width: 33.333%;
+                        float: left;
+                        text-align: center;
+                        height: 40px;
+                        line-height: 40px;
+                        border-right: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                        margin-bottom: -1px;
+                        &:nth-of-type(3n){
+                            border-right: none;
+                        }
+                        >a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*引入公用底部样式*/
+@import 'footer.less';

@@ -1,0 +1,67 @@
+/*顶部*/
+
+#topbar {
+    /*头部logo跟下载按钮*/
+    .topbar-img {
+        width: 100%;
+        height: 51px;
+        background-color: #ff841d;
+        >a {
+            padding: 12px;        
+            display: block;
+            margin-left: 5px;
+            /*logo*/
+            &.l-logo {
+                float: left;
+                line-height: 25px;
+                >img {
+                    width: 187px;
+                    height: 25px;
+                }
+            }
+            /*右边下载按钮*/
+            &.r-appDown {
+                float: right;
+                padding: 7px;
+                >img {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+    /*搜索框*/
+    .topbar-search {
+        width: 100%;
+        height: 51px;
+        padding: 10px 12px;
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+        >.topbar-form {
+            margin-right: 120px;
+            height: 100%;
+            /*搜索框*/
+            >.search-txt {
+                width: 100%;
+                height: 100%;
+                background-color: #f1f1f1;
+                display: inline-block;
+                border-radius: 30px;
+                padding-left: 3%;
+            }
+            /*搜索按钮*/
+            >.search-btn {
+                width: 63px;
+                height: 30px;
+                background-color: #ff841d;
+                border-radius: 30px;
+                font-size: 16px;
+                line-height: 30px;
+                color: #fff;
+                position: absolute;
+                right: 12px;
+                top: 10px;
+            }
+        }
+    }
+}

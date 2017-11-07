@@ -1,0 +1,220 @@
+/*引入初始化样式*/
+
+@import 'base.less';
+
+/*引入公用头部样式*/
+
+@import 'header.less';
+
+/*公共详情部分*/
+
+@import 'public-detail.less';
+
+/*主体部分*/
+body {
+    background: #ebebeb;
+}
+#main {
+    //导航部分
+    .main-nav {
+        position: relative;
+        padding-top: 20px;
+        // background-color: #ebebeb;
+        >ul {
+            >li {            
+                float: left;
+                width: 33.3333%;
+                height: 40px;
+                line-height: 38px;
+                border-top: 2px solid #c14d00;
+                border-bottom: 2px solid #c14d00;
+                border-left: 1px solid #c14d00;
+                background-color: #ffbb00;
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+                &:first-of-type {
+                    border-left: none;
+                    background: #ffbb00;
+                    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000))
+                }
+                >a {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        } //向下的小箭头
+        >.logo {
+            position: relative;
+            background-color: #fff;
+            height: 10px;
+            line-height: 10px;
+            >img {
+                position: absolute;
+                top: -2px;
+                left: 15%;
+            }
+        }
+    } 
+    //商城来源
+    >.main-source {
+        background-color: #fff;
+        padding-top: 10px;        
+        >ul {
+            >li {
+                position: relative;
+                padding: 14px 0px;
+                border-bottom: 1px solid #ccc;
+                >a {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 28px;
+                    >.mall {
+                        float: left;
+                        width: 40%;
+                        padding-left: 10px;
+                        >img {
+                            margin-bottom: 1px;
+                        }
+                        >span {
+                            &:first-of-type {
+                                color: #5a5a5a;
+                                font-size: 14px;
+                            }
+                            &:last-of-type {
+                                color: #999;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    >.price {
+                        float: left;
+                        width: 60%;
+                        text-align: right;
+                        padding-right: 25px;
+                        color: #fe0202;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    } 
+    //比价结果 历史最低价
+    >.tip {
+        background-color: #fff;
+        >a {
+            display: inline-block;
+            padding: 15px 10px;
+        }
+        >p {
+            padding: 10px;
+            color: #888;
+            font-size: 12px;
+        }
+    } 
+    //优选网友评价
+    >.evaluate {
+        border-top: 4px solid #7a7a7a;
+        margin-top: 5px; //优选网友评价
+        >.ev-title {
+            >p {
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                font-size: 14px;
+                border-top: 1px solid #fff;
+            }
+        }
+        >ul {
+            background-color: #fff;            
+            >li {
+                border-top: 1px solid #ccc; //头部 包括 用户 评价星级 时间 来自哪个商城
+                padding: 5px 10px;
+                >.head {
+                    >.user-star {
+                        float: left;
+                        width: 50%;
+                    }
+                    >.time-mall {
+                        width: 50%;
+                        float: left;
+                        text-align: right;
+                    }
+                } //评论内容
+                >.content {
+                    width: 50%;
+                    color: #000;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding-top: 5px
+                } //回复
+                >a {
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+        }
+    } 
+    //查看更多网友评价
+    >.more {
+        padding: 0 8px;
+        margin-top: 16px;
+        >a {
+            display: block;
+            height: 32px;
+            background-color: #d4d4d4;
+            text-align: center;
+            font-size: 14px;
+            line-height: 32px;
+            border-radius: 5px;
+            border-bottom: 1px solid #bababa;
+            box-shadow: 0 0 1px #666;
+        }
+    }
+}
+
+/*广告*/
+#ad {
+    margin-top: 20px;
+    background: #434343;
+    padding: 10px 15px;
+    >img {
+        width: 64px;
+        height: 64px;
+        float: left;
+    }
+
+    >.ad-content {
+        float: left;
+        margin-left: 10px;
+        font-size: 18px;
+        >p {
+            color: #fff;
+            &:last-of-type {
+                color: #fee6c2;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    >.btn {
+        text-align: right;
+        >a {
+            display: inline-block;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            color: #FFFFFF;
+            background: #6db110;
+            border-radius: 4px;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+}
+
+
+/*引入公用底部样式*/
+
+@import 'footer.less';
